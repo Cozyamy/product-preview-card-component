@@ -40,7 +40,8 @@ main {
 		flex-direction: row;
 		width: 100%;
 		height: unset;
-		margin: 10rem 10rem 10rem 20rem;
+		margin: 10rem 10rem 10rem 10rem;
+		justify-content: center;
 		
 }
 
@@ -116,99 +117,28 @@ button:hover {
 
 
 @media (max-width: 375px) {
-	main {
-		display: flex;
-		flex-direction: column;
-		transition: box-shadow .5s;
-	}
-
-	.contained .photo {
+	.photo {
 		display: none;
+
 	}
 
 	.initial {
 		display: flex;
 		flex-direction: column;
+		height: auto;
 		width: 100%;
-		height: unset;
-
-	}
-
-	.contained {
-		margin-right: 1rem;
-		margin-left: 1rem;
-		margin-top: 1rem;
-		padding-top: 20px;
+		margin: 1rem;
 	}
 
 	.photoMobile {
 		display: block;
-		width: 100%;
-
 	}
 
 	.photoMobile > img {
-		width: 100%;
-		border-radius: 10px 10px 0 0;
+		width: 350px;
 	}
 
 	.txt {
-		background-color: hsl(0, 0%, 100%);
-		margin-right: 1rem;
-		margin-left: 1rem;
-		padding: 25px;
-		
-	}
-
-	.head {
-		color: hsl(228, 12%, 48%);
-		letter-spacing: 6px;
-		font-weight: 500;
-		font-size: 12px;
-	}
-
-	h1 {
-		color: hsl(212, 21%, 14%);
-		font-weight: 700;
-		font-family: Fraunces;
-	}
-
-	.tail {
-		color: hsl(228deg, 12%, 48%);
-		font-weight: 500;
-		font-size: 13.2px;
-		font-family: Montserrat;
-	}
-
-	.price {
-		color: hsl(158deg, 36%, 37%);
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		font-weight: 700;
-		width: 80%;
-		margin: 2rem 0;
-	}
-
-	#present {
-		font-size: 2rem;
-		font-family: Fraunces;
-	}
-
-	#former {
-		text-decoration: line-through;
-		color: hsl(228deg, 12%, 48%);
-		font-size: 0.9rem;
-		padding-top: 0.9rem;
-		font-weight: 500;
-		padding-right: 1.5rem;
-	}
-
-	button {
-		background-color: hsl(158, 36%, 37%);
-		padding: 15px 80px;
-		border: none;
-		border-radius: 10px;
-		color: hsl(0, 0%, 100%);
-		cursor: pointer;
+		height: auto;
+		width: 350px;
 	}
