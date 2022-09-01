@@ -29,6 +29,9 @@ main {
 	display: flex;
 	flex-direction: row;
 	transition: box-shadow .5s;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
 }
 
 .photoMobile {
@@ -38,10 +41,9 @@ main {
 .initial {
 		display: flex;
 		flex-direction: row;
-		width: 100%;
-		height: unset;
-		margin: 10rem 10rem 10rem 10rem;
 		justify-content: center;
+		align-items: center;
+		max-width: 800px;
 		
 }
 
@@ -125,8 +127,6 @@ button:hover {
 	.initial {
 		display: flex;
 		flex-direction: column;
-		height: auto;
-		width: 100%;
 		margin: 1rem;
 	}
 
